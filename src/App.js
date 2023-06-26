@@ -2,10 +2,11 @@
 import componentsImage from './assets/images/components.png';
 import stateImage from './assets/images/state.png';
 import eventsImage from './assets/images/events.png';
+//Components
 import Header  from '../src/components/Header/Header'
-import Concepts from "./components/concepts/Concept";
-import "./index.css"
+import Concept from "./components/Concept/Concept";
 
+//data
 const concepts = [
   {
     title: 'Components',
@@ -32,7 +33,9 @@ function App() {
     <div>
       <Header />
       <ul id="concepts">
-      <Concepts items={concepts} />
+      <Concept image={concepts[0].image} title={concepts[0].title} description={concepts[0].description}/>
+      <Concept image={concepts[1].image} title={concepts[1].title} description={concepts[1].description}/>
+      <Concept image={concepts[2].image} title={concepts[2].title} description={concepts[2].description}/>
       </ul>
     </div>
   );
