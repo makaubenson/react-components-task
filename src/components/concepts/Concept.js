@@ -1,9 +1,9 @@
 import ConceptItem from "./ConceptItem";
-import "../../index.css";
 
 const Concepts = (props) => {
   return (
   <div>
+
     <ConceptItem
       title={props.items[0].title}
       image={props.items[0].image}
@@ -20,6 +20,7 @@ const Concepts = (props) => {
       image={props.items[2].image}
       description={props.items[2].description}
     />
+
   </div>
 
   );
